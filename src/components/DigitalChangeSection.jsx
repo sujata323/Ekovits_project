@@ -12,7 +12,7 @@ const CircularText = ({ text }) => {
           <span
             key={index}
             style={{
-               transform: `rotate(${(index * 360) / chars.length}deg) translateY(-90px)`
+              transform: `rotate(${(index * 360) / chars.length}deg) translateY(-90px)`
             }}
           >
             {char}
@@ -26,14 +26,14 @@ const CircularText = ({ text }) => {
 const DigitalChangeSection = () => {
   return (
     <div className="digital-section">
-      <div className="content-container">
-        <div className="left-content">
+      <div className="content-container1">
+        <div className="left-container1">
           <h1>Ready to Embrace<br />Digital Change?</h1>
           <p>Let’s guide you through a seamless transformation process</p>
           <button className="cta-button">Get Started <FaArrowRight /></button>
         </div>
 
-        <div className="right-content">
+        <div className="right-container1">
           <div className="circle-stat">
             <CircularText text="YEARS OF EXPERIENCE • " />
             <div className="stat">

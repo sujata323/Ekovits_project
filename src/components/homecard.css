@@ -19,15 +19,40 @@
     font-size: 2.2rem;
     color: #2c3e50;
     margin-bottom: 25px;
+    
 }
+.gradient-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .gradient-heading .highlight {
+    background: linear-gradient(90deg, #3b4bdc, #3c9fe2, #38c6e6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtitle {
+    font-size: 1rem;
+    text-align: center;
+    /* color: #333; */
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+    color: black;
+  }
+    
 
 /* Subtitle */
-.subtitle {
-    color: #666;
+/* .subtitle {
+    width: 80%;
+    margin: auto;
+    color: black;
     margin-bottom: 30px;
     font-size: 1rem;
     line-height: 1.5;
-}
+    text-align: center;
+} */
 
 /* Content Container */
 .content-container {

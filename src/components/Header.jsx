@@ -52,8 +52,8 @@ const Header = () => {
               Get In Touch &gt;
             </button> */}
             <Link to="/contact" className="custom-subscribe-btn px-3 d-inline-block text-decoration-none text-white" style={{ fontSize: '14px' }}>
-  Get In Touch &gt;
-</Link>
+              Get In Touch &gt;
+            </Link>
 
           </div>
         </div>

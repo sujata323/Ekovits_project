@@ -150,8 +150,7 @@ const ValueProposition = () => {
   return (
     <Container>
       <HeaderText>
-        VALUES<br></br>
-      Discover the core values that inspire us, shape our culture, and drive our commitment to excellence.
+      Why you should choose Us
       </HeaderText>
 
       

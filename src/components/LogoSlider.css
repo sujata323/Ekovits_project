@@ -1,0 +1,22 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.logo-slider-wrapper {
+  background-color: #2f4ab2;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.logo-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.logo-slide img {
+  max-width: 160px;
+  height: auto;
+  filter: brightness(0) invert(1); /* Optional: makes dark logos white */
+}

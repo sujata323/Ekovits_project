@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import DigitalChangeSection from '../components/DigitalChangeSection';
 import ContactSection from '../components/ContactSection';
-import { ArrowRight } from "lucide-react";
+// import { ArrowRight } from "lucide-react";
 import ValueProposition from '../components/ValueProposition';
 import JoinTeamSection from '../components/JoinTeamSection';
 
