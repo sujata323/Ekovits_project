@@ -1,0 +1,63 @@
+.custom-subscribe-btn {
+    background: linear-gradient(to right, #1e00ff, #36d1dc);
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-subscribe-btn:hover {
+    animation: alternateGradient 4s ease-in-out infinite alternate;
+
+    transform: translateY(-2px);
+  }
+  
+  @keyframes alternateGradient {
+    0% {
+      background: linear-gradient(to right, #1e00ff, #36d1dc);
+    }
+    50% {
+      background: linear-gradient(to right, #36d1dc, #1e00ff);
+    }
+    100% {
+      background: linear-gradient(to right, #1e00ff, #36d1dc);
+    }
+  }
+  
+  .custom-arrow {
+    font-size: 1.2rem;
+    margin-left: 5px;
+  }
+  
+  .social-icon {
+    background-color: white;
+    color: black;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+    
+    color: rgb(243, 121, 8);
+  }
+  .custom-placeholder::placeholder {
+    color: rgb(116, 115, 115) !important;
+    opacity: 1;
+  }
+  

@@ -1,0 +1,234 @@
+/* Reset word wrapping globally for safety */
+* {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Title */
+.main-container h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Content Container */
+.content-container {
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+    background-color: #eaf7ff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 0;
+    min-width: 48%;
+    overflow: hidden;
+}
+
+/* Left Image */
+.left-image {
+    flex: 1;
+    min-width: 48%;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.left-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    max-height: 100%;
+}
+
+/* Left Content */
+.left-content {
+    flex: 1;
+    min-width: 48%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Left Content Heading */
+.left-content h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+.left-content p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Features Section */
+.features-container h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.features-list li {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+/* CTA Button */
+.cta-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    margin-top: auto;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Right Section */
+.right-section {
+    width: 320px;
+    background-color: #f8fafc;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Card Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Service Card */
+.service-card {
+    background: #fff;
+    padding: 25px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.service-card:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-card.active {
+    border-left: 3px solid #3498db;
+    background: #f8fafc;
+}
+
+/* Icon */
+.card-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+    background: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 12px;
+    transition: background 0.3s ease;
+}
+
+.service-card:hover .card-icon {
+    background: #e67e22;
+}
+
+.service-card:hover h4 {
+    color: #e67e22;
+}
+
+/* Card Title */
+.service-card h4 {
+    font-size: 1rem;
+    margin: 0;
+    color: #2c3e50;
+}
+
+.service-card.active h4 {
+    color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .left-section {
+        flex-direction: column;
+    }
+
+    .left-image {
+        min-width: 100%;
+        height: 250px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .left-content {
+        min-width: 100%;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
